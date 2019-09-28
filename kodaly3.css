@@ -315,16 +315,7 @@ p {
 
 
          
-  padding-top: 20px;
- 
 
-  display: grid;
-  grid-auto-rows: 50vh;
-  grid-gap: 30px;
-  grid-template-columns: repeat(2, minmax(25vw, 25vw));
-  justify-content: center;
-  align-items: stretch;
-}
 .card {
   position: relative;
   padding: 10px;
