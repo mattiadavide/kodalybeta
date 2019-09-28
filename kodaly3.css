@@ -2,6 +2,12 @@
     width: 0px;
 }
 
+::-webkit-scrollbar iframe {
+    width: 0px;
+}
+
+
+
 
 body {
     overflow-x: hidden;
@@ -311,7 +317,7 @@ p {
 
 .mpc img {height: 8.5vw;}
 
-.gallery {width: 50vw; margin: auto;}
+.gallery {width: 50vw; margin: auto; height: 170vh; }
 
 .product {
 
