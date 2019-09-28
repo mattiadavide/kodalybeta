@@ -313,15 +313,23 @@ p {
 
 .gallery {width: 50vw; margin: auto;}
 
+.product {
 
-         
-
+ height: 94.3vh;
+padding-top:5.7vh ;
+  display: grid;
+  grid-auto-rows: 47.15vh;
+  
+  grid-template-columns: repeat(2, minmax(25vw, 25vw));
+  justify-content: center;
+  align-items: stretch;
+  
+}
 .card {
   position: relative;
   padding: 10px;
   background: white;
-    border: 1px solid;
-    border-color: rgba(0, 0, 0, 0.25);
+  
   display: grid;
   grid-template-rows: 8fr 1fr 1fr;
  
@@ -472,7 +480,7 @@ p {
     
     .product {
     grid-template-columns: 1fr;
-    margin: 55px 0px;
+   
         
   }
 
@@ -491,15 +499,9 @@ p {
 @media screen and (max-width: 823px) and (max-height: 414px) and (orientation: landscape)  {
     .mpc img {height: 18vw;}
     
-    .uno  {flex-direction: row}  
+    .uno  {flex-direction: row;}  
     
-    .due {width: 100vw;  height: 100vh; }
-    
-    .due .flex {background-size: 80vh }
-    
-    .tre {width: 100vw;  height: 100vh; }
-    
-    .tre .flex {background-size: 100vh }
+   
     
         #menu {display: none}
  
@@ -508,7 +510,7 @@ p {
     
   
    
-    .flex   {width: 50vw; height: 100vh; background-size: 80vh;}
+    .flex   {width: 50vw; height: 94.3vh; background-size: 80vh;}
     
    video {height: 80vh;}
     
