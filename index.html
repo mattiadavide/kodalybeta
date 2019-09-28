@@ -138,9 +138,12 @@
                         The attribution of a physical identity for every music pitch eases the use of the instrument for visually impaired people as well as people with neurologic disfunctions like autism.
                     </p></div></div></div>
     
-     
-<div class="gallery"  id="page2" > <iframe src="curator.html" style="width: 100%; height: 100%; border: none;" ></iframe>
-</div>
+  
+<div id="instafeed">
+          
+          
+          
+   		</div> 
 
   
     
@@ -272,9 +275,57 @@
     <script src="js/jquery.min.js"></script>
 
       
-
+<script>
+     var userFeed = new Instafeed({
+        get: 'user',
+        userId: 12277437734,
+        accessToken: '12277437734.0944197.341cb2ae20694740b146b9240cdbf849',
+      limit: 10,  
+      template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /><div class="likes">&hearts; {{likes}}</div></a>',
+      after: function () {
+    var images = $("#instafeed").find('a');
+    $.each(images, function(index, image) {
+   
+      var delay = (index * 75) + 'ms';
+      $(image).css('-webkit-animation-delay', delay);
+      $(image).css('-moz-animation-delay', delay);
+      $(image).css('-ms-animation-delay', delay);
+      $(image).css('-o-animation-delay', delay);
+      $(image).css('animation-delay', delay);
+      $(image).addClass('animated flipInX');
+    });
+  },
+    });
+    userFeed.run();
+    
+    </script>
     
     <script>
+
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
   
        (function() {
             const header = document.querySelector('.header');
