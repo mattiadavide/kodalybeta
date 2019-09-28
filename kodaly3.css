@@ -290,7 +290,7 @@ p {
 
  .due  {flex-direction: row; width: 50vw; height: 47.15vh; margin: auto; border-bottom: 1px solid; border-color: rgba(0, 0, 0, 0.25); }   
 
- .tre  {flex-direction: row; width: 50vw; height: 94.3vh; margin: auto;  }   
+ .tre  {flex-direction: row; width: 50vw; margin: auto;  }   
 
 
 .tre .flex {border-top: 1px solid black;border-bottom: 1px solid;  border-color: rgba(0, 0, 0, 0.25); }
