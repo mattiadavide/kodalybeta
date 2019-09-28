@@ -286,11 +286,11 @@ p {
 
 .pagina  {display: flex; flex-direction: column; width: 100vw; height: 94.3vh; align-items: center; justify-content: center; padding-top:5.7vh ; }
 
-.flex   {display: flex; width: 100vw; height: 50vh; align-items: center; justify-content: center; overflow: hidden; background-size: 50vh; background-position: center; background-repeat: no-repeat }
+.flex   {display: flex; width: 100vw; height: 47.15vh; align-items: center; justify-content: center; overflow: hidden; background-size: 47.15vh; background-position: center; background-repeat: no-repeat }
 
- .due  {flex-direction: row; width: 50vw; height: 50vh; margin: auto; border-bottom: 1px solid; border-color: rgba(0, 0, 0, 0.25); }   
+ .due  {flex-direction: row; width: 50vw; height: 47.15vh; margin: auto; border-bottom: 1px solid; border-color: rgba(0, 0, 0, 0.25); }   
 
- .tre  {flex-direction: row; width: 50vw; height: 100vh; margin: auto;  }   
+ .tre  {flex-direction: row; width: 50vw; height: 94.3vh; margin: auto;  }   
 
 
 .tre .flex {border-top: 1px solid black;border-bottom: 1px solid;  border-color: rgba(0, 0, 0, 0.25); }
