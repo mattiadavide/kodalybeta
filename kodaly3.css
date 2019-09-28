@@ -284,7 +284,7 @@ p {
 
 
 
-.pagina  {display: flex; flex-direction: column; width: 100vw; height: calc(100% - 55px); align-items: center; justify-content: center; padding-top: 55px; }
+.pagina  {display: flex; flex-direction: column; width: 100vw; height: 94.3vh; align-items: center; justify-content: center; padding-top:5.7vh ; }
 
 .flex   {display: flex; width: 100vw; height: 50vh; align-items: center; justify-content: center; overflow: hidden; background-size: 50vh; background-position: center; background-repeat: no-repeat }
 

@@ -38,16 +38,16 @@
             <div class="mobile-menu" >
                 <ul class="menu">
                     
-                    <li class="menu-item active"><a href="#page1">Kibo</a></li>
+                    <li class="menu-item active"><a href="#page1" class="js-anchor-link">Kibo</a></li>
                     
 
-                    <li class="menu-item"><a href="#page2">Gallery</a>
+                    <li class="menu-item"><a href="#page2" class="js-anchor-link">Gallery</a>
                     </li>
-                    <li class="menu-item"><a href="#page3">Donate</a>
+                    <li class="menu-item"><a href="#page3" class="js-anchor-link">Donate</a>
                     </li>
-                    <li class="menu-item"><a href="#page4">Shop</a>
+                    <li class="menu-item"><a href="#page4" class="js-anchor-link">Shop</a>
                     </li>
-                    <li class="menu-item"><a href="#page5">Contact</a>
+                    <li class="menu-item"><a href="#page5" class="js-anchor-link">Contact</a>
                     </li>
                     
                     
@@ -69,18 +69,20 @@
 
         <ul id="menu">
 
-            <li class="active"><a href="#page1">Kibo</a></li>
+            <li><a href="#page1">Kibo</a></li>
             
-            <li ><a href="#page2">Gallery</a></li>
-            <li ><a  href="#page3">Donate</a></li>
-            <li ><a href="#page4">Shop</a></li>
-            <li ><a href="#page5">Contact</a></li>
+            <li ><a href="#page2" class="js-anchor-link">Gallery</a></li>
+            <li ><a  href="#page3" class="js-anchor-link">Donate</a></li>
+            <li ><a href="#page4" class="js-anchor-link">Shop</a></li>
+            <li ><a href="#page5" class="js-anchor-link">Contact</a></li>
 
         </ul>
 
     </div>
 
- <div class="pagina uno"><div class="flex" style="background-color: black"><video autoplay muted playsinline>
+    
+    <div id="page1">
+ <div class="pagina uno" ><div class="flex" style="background-color: black"><video autoplay muted playsinline>
                         <source src="img/kibo1.mp4" type="video/mp4">
                         <source src="img/kibo1.mp4" type="video/webm">
                     </video></div><div class="flex uno" style="background-image: url(img/kibo_logo.svg); "></div></div>
@@ -134,15 +136,15 @@
     
     <div class="pagina due"><div class="flex" style="background-image: url(img/kibo8.svg); "></div><div class="flex"><p>
                         The attribution of a physical identity for every music pitch eases the use of the instrument for visually impaired people as well as people with neurologic disfunctions like autism.
-                    </p></div></div>
+                    </p></div></div></div>
     
        
-<div class="pagina">
+<div class="pagina" id="page2">
     
   </div>
                
               
-     <div class="pagina tre"><form class="flex"  action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+     <div class="pagina tre" id="page3"><form class="flex"  action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                     <input type="hidden" name="cmd" value="_s-xclick" />
                     <input type="hidden" name="hosted_button_id" value="MQZFPJTDLGYXQ" />
                     <input class="paypal" type="image" src="img/paypal.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
@@ -154,8 +156,8 @@
      
  
     
-    
-    <div class='product'; style="margin-top: 55px">
+    <div class="pagina" id="page4">
+    <div class= "product" >
     <div class='card'>
       <div class='card-content'>
         <div class='top-bar'>
@@ -224,12 +226,12 @@
       </div>
     
   
-           
+           </div>
     
     
     
     
- <div class="pagina uno" >   
+ <div class="pagina uno" id="page5">   
   <div class="flex map-container" >  
   <iframe style="width: 100%; height: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.072150321763!2d9.16423041555761!3d45.46835047910093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c15cbc1c04ed%3A0x7b0366baddd27946!2sVia%20Gian%20Battista%20Bazzoni%2C%208%2C%2020123%20Milano%20MI%2C%20Italia!5e0!3m2!1sit!2s!4v1567465857700!5m2!1sit!2s" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>  
     
@@ -281,7 +283,22 @@
         // close hamburger menu after click a
         $('.menu li a').on("click", function() {
             $('.icon-container').click();
-        });</script>
+        });
+    
+    
+    
+    $('.js-anchor-link').click(function(e){
+  e.preventDefault();
+  var target = $($(this).attr('href'));
+  if(target.length){
+    var scrollTo = target.offset().top;
+    $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+  }
+});
+    
+    
+    
+    </script>
  
    
   
