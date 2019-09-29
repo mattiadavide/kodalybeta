@@ -39,8 +39,8 @@ p {
     width: 100%;
     height: 100%;
     box-shadow: none;
-    z-index: 71;
-    background: transparent;
+    z-index: 99;
+    background: white;
     position: relative;
     overflow: hidden;
     display:none;
@@ -323,6 +323,14 @@ width: 50vw;
   
 }
 
+      .insta p {
+border: none;
+
+  
+}
+
+
+
 
 .product {
 
@@ -460,8 +468,42 @@ padding:5.7vh ;
 
 .tre {min-width: 100vw}
 
+.product {
+
+ height: 100%;
+padding:5.7vh ;
+  display: grid;
+  grid-auto-rows: 50vh;
+  
+  grid-template-columns: repeat(2, minmax(25vw, 50vw));
+  justify-content: center;
+  align-items: stretch;
+  
+}
+    
+  .insta {
+padding:0 ;
+      margin: 0;
+ height: 100%;
+width: 100vw;
+  display: grid;
+      
 
     
+  
+  
+  grid-template-columns: repeat(2, minmax(25vw, 50vw));
+
+  
+}
+    
+    
+
+    
+ .instagram-media {width: 50vw;}    
+    
+      
+
 
 } 
 
