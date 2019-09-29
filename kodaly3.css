@@ -43,7 +43,7 @@ p {
     background: white;
     position: relative;
     overflow: hidden;
- 
+    display:none;
 }
 
 .content img {
@@ -323,11 +323,7 @@ width: 50vw;
   
 }
 
-      .insta p {
-border: none;
 
-  
-}
 
 
 
@@ -550,7 +546,7 @@ width: 100vw;
  #menu {display: none}
  
     
-    .container {display: block}
+    .container {display:inherit}
 
 }
  
