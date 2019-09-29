@@ -2,32 +2,26 @@
     width: 0px;
 }
 
-
-
-
 body {
     overflow-x: hidden;
     padding: 0;
     margin: 0;
     margin: 0px auto;
     height: 100%;
-   
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-video {height: 50vh}
+video {
+    height: 50vh
+}
 
 p {
     font-size: 1rem;
     text-align: justify;
-    
     line-height: 200%;
     padding: 2.6vw;
-    border-left: 1px solid; border-color: rgba(0, 0, 0, 0.25);
-   
-    
-    
-   
+    border-left: 1px solid;
+    border-color: rgba(0, 0, 0, 0.25);
 }
 
 
@@ -43,7 +37,7 @@ p {
     background: white;
     position: relative;
     overflow: hidden;
-    display:none;
+    display: none;
 }
 
 .content img {
@@ -172,6 +166,7 @@ p {
     transition-delay: 0.35s;
 }
 
+
 /* Menu Icon */
 
 .icon-container {
@@ -282,311 +277,284 @@ p {
     border-color: rgba(0, 0, 0, 0.25);
 }
 
+
 /* Menu List items */
 
+.pagina {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 94.3vh;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5.7vh;
+}
 
+.flex {
+    display: flex;
+    width: 100vw;
+    height: 47.15vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-size: 47.15vh;
+    background-position: center;
+    background-repeat: no-repeat
+}
 
+.due {
+    flex-direction: row;
+    width: 50vw;
+    height: 47.15vh;
+    margin: auto;
+    border-bottom: 1px solid;
+    border-color: rgba(0, 0, 0, 0.25);
+}
 
-.pagina  {display: flex; flex-direction: column; width: 100vw; height: 94.3vh; align-items: center; justify-content: center; padding-top:5.7vh ; }
+.tre {
+    flex-direction: row;
+    width: 50vw;
+    margin: auto;
+}
 
-.flex   {display: flex; width: 100vw; height: 47.15vh; align-items: center; justify-content: center; overflow: hidden; background-size: 47.15vh; background-position: center; background-repeat: no-repeat }
+.tre .flex {
+    border-top: 1px solid black;
+    border-bottom: 1px solid;
+    border-color: rgba(0, 0, 0, 0.25);
+}
 
- .due  {flex-direction: row; width: 50vw; height: 47.15vh; margin: auto; border-bottom: 1px solid; border-color: rgba(0, 0, 0, 0.25); }   
+.due .flex {
+    background-size: 40vh
+}
 
- .tre  {flex-direction: row; width: 50vw; margin: auto;  }   
+.paypal {
+    width: 35vh
+}
 
-
-.tre .flex {border-top: 1px solid black;border-bottom: 1px solid;  border-color: rgba(0, 0, 0, 0.25); }
-
-.due .flex {background-size: 40vh}
-
-
-
-.paypal {width: 35vh}
-
-
-.instagram-media {width: 25vw; transform: scale(0.9);}
-
+.instagram-media {
+    width: 25vw;
+}
 
 .insta {
-padding:5.7vh ;
- height: 100%;
-width: 50vw;
+    padding: 5.7vh;
+    height: 100%;
+    width: 50vw;
     margin: auto;
-  display: grid;
-
-    
-  
-  
-  grid-template-columns: repeat(2, minmax(25vw, 25vw));
-
-  
+    display: grid;
+    grid-template-columns: repeat(2, minmax(25vw, 25vw));
 }
-
-
-
-
-
 
 .product {
-
- height: 100%;
-padding:5.7vh ;
-  display: grid;
-  grid-auto-rows: 50vh;
-  
-  grid-template-columns: repeat(2, minmax(25vw, 25vw));
-  justify-content: center;
-  align-items: stretch;
-  
+    height: 100%;
+    padding: 5.7vh;
+    display: grid;
+    grid-auto-rows: 50vh;
+    grid-template-columns: repeat(2, minmax(25vw, 25vw));
+    justify-content: center;
+    align-items: stretch;
 }
+
 .card {
-  position: relative;
-  padding: 10px;
-  background: white;
-  
-  display: grid;
-  grid-template-rows: 8fr 1fr 1fr;
- 
-  transition: 0.2s ease-in;
+    position: relative;
+    padding: 10px;
+    background: white;
+    display: grid;
+    grid-template-rows: 8fr 1fr 1fr;
+    transition: 0.2s ease-in;
 }
+
 .card .card-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
+
 .card .card-content .top-bar {
-  width: calc(100% - 40px);
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 20px;
+    width: calc(100% - 40px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
 }
+
 .card .card-content .top-bar .float-right {
-  float: right;
+    float: right;
 }
+
 .card .card-content .img {
-  width: 100%;
-  justify-content: bottom;
-  align-content: bottom;
-  text-align: center;
+    width: 100%;
+    justify-content: bottom;
+    align-content: bottom;
+    text-align: center;
 }
+
 .card .card-content .img img {
-  max-width: 100%;
-  
+    max-width: 100%;
 }
+
 .card .card-description {
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  width: calc(100%-20px);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    width: calc(100%-20px);
 }
+
 .card .card-description .title {
-  text-transform: uppercase;
-  text-align: left;
+    text-transform: uppercase;
+    text-align: left;
 }
+
 .card .card-description .cart {
-  float: right;
-  cursor: pointer;
+    float: right;
+    cursor: pointer;
 }
+
 .card .card-footer {
-  text-transform: uppercase;
-  padding: 0.3em;
-  border-top: 0.5px solid #ececec;
-  letter-spacing: 0.1em;
-  font-size: 11px;
-  color: white;
-  justify-items: left;
-  align-items: center;
-  display: flex;
+    text-transform: uppercase;
+    padding: 0.3em;
+    border-top: 0.5px solid #ececec;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+    color: white;
+    justify-items: left;
+    align-items: center;
+    display: flex;
 }
+
 .card .card-footer .span {
-  margin: 5px;
-  width: auto;
-  background: #dedede;
-  padding: 4px 7px;
-  border-radius: 2px;
-  font-weight: 100;
-  cursor: pointer;
+    margin: 5px;
+    width: auto;
+    background: #dedede;
+    padding: 4px 7px;
+    border-radius: 2px;
+    font-weight: 100;
+    cursor: pointer;
 }
+
 .card .card-footer .span:hover {
-  background: #aaaaaa;
+    background: #aaaaaa;
 }
+
 .card:hover {
-  transition: 0.2s ease-in;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  box-shadow: 0px 45px 60px 0px rgba(0, 0, 0, 0.087);
+    transition: 0.2s ease-in;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    box-shadow: 0px 45px 60px 0px rgba(0, 0, 0, 0.087);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1200px)  {.due {min-width: 100vw}
-
-.tre {min-width: 100vw}
-
-.product {
-
- height: 100%;
-padding:5.7vh ;
-  display: grid;
-  grid-auto-rows: 50vh;
-  
-  grid-template-columns: repeat(2, minmax(25vw, 50vw));
-  justify-content: center;
-  align-items: stretch;
-  
-}
-    
-  .insta {
-padding:0 ;
-      margin: 0;
-
-width: 100vw;
-  display: grid;
-      
-
-    
-  
-  
-  grid-template-columns: repeat(2, minmax(25vw, 50vw));
-
-  
-}
-    
-    
-
-    
- .instagram-media {width: 50vw;}    
-    
-      
-
-
-} 
-
-
-@media screen and (max-width: 1023px) and (orientation: portrait)  {
-    
-    
-    
-     .due  {flex-direction: column; width: 100vw; height: 70vh; border: none}
-    
-    
-        .tre  {flex-direction: column; width: 100vw; height: 100vh; border: none}
-    
-      .tre p {border: none }
-    
-    p {border: none;
- 
-    border-top: 1px solid;border-bottom: 1px solid; border-color: rgba(0, 0, 0, 0.25);}
-   
-   
-  
-    
-
-    
-     .paypal {width: 40vh}
-    
-    
+@media screen and (max-width: 1200px) {
+    .due {
+        min-width: 100vw
+    }
+    .tre {
+        min-width: 100vw
+    }
     .product {
-    grid-template-columns: 1fr;
-   
-        
-  }
-       .insta {
-    grid-template-columns: 1fr; width: 100%;  padding: 0; 
-           
-   
-        
-  }
-    
-       .instagram-media {width: 100vw;}
-
-
-
- #menu {display: none}
- 
-    
-    .container {display:inherit}
-
-}
- 
-
-
-
-
-@media screen and (max-width: 823px) and (max-height: 414px) and (orientation: landscape)  {
-  
- 
-    .uno  {flex-direction: row;}  
-    
-    
-    .due  {height: 100vh;}  
-    
-        #menu {display: none}
- 
-    
-    .container {display: block}
-    
-  
-   
-    .flex   {width: 50vw; height: 94.3vh; background-size: 80vh;}
-    
-   video {height: 80vh;}
-    
-    .insta {grid-template-columns: repeat(2, minmax(25vw, 49vw));padding: 0; width: 100%;
+        height: 100%;
+        padding: 5.7vh;
+        display: grid;
+        grid-auto-rows: 50vh;
+        grid-template-columns: repeat(2, minmax(25vw, 50vw));
+        justify-content: center;
+        align-items: stretch;
     }
-    
-   
-    .paypal {width: 80vh}
-    
-    .product {grid-template-columns: repeat(2, minmax(25vw, 50vw));
+    .insta {
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(25vw, 50vw));
     }
-    
+    .instagram-media {
+        width: 50vw;
+    }
 }
 
+@media screen and (max-width: 1023px) and (orientation: portrait) {
+    .due {
+        flex-direction: column;
+        width: 100vw;
+        height: 70vh;
+        border: none
+    }
+    .tre {
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        border: none
+    }
+    .tre p {
+        border: none
+    }
+    p {
+        border: none;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-color: rgba(0, 0, 0, 0.25);
+    }
+    .paypal {
+        width: 40vh
+    }
+    .product {
+        grid-template-columns: 1fr;
+    }
+    .insta {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0;
+    }
+    .instagram-media {
+        width: 100vw;
+    }
+    #menu {
+        display: none
+    }
+    .container {
+        display: inherit
+    }
+}
 
-
-
-
-
-
+@media screen and (max-width: 823px) and (max-height: 414px) and (orientation: landscape) {
+    .uno {
+        flex-direction: row;
+    }
+    .due {
+        height: 100vh;
+    }
+    #menu {
+        display: none
+    }
+    .container {
+        display: block
+    }
+    .flex {
+        width: 50vw;
+        height: 94.3vh;
+        background-size: 80vh;
+    }
+    .due .flex {
+        background-size: 60vh
+    }
+    video {
+        height: 80vh;
+    }
+    .paypal {
+        width: 80vh
+    }
+    .product {
+        grid-template-columns: repeat(2, minmax(25vw, 50vw));
+    }
+    .insta {
+        padding: 0;
+        height: 100%;
+        width: 100vw;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(25vw, 50vw));
+    }
+}
