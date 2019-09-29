@@ -530,7 +530,8 @@ padding:5.7vh ;
    video {height: 80vh;}
     
    
-    
+    .insta {grid-template-columns: repeat(2, minmax(25vw, 45vw));
+    }
     .paypal {width: 80vh}
     
     .product {grid-template-columns: repeat(2, minmax(25vw, 45vw));
