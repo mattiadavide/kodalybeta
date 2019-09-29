@@ -308,16 +308,21 @@ p {
 .paypal {width: 35vh}
 
 
-.insta {
+.instagram-media {width: 25vw; transform: scale(0.9);}
 
- height: 100%;
+
+.insta {
 padding:5.7vh ;
+ height: 100%;
+width: 50vw;
+    margin: auto;
   display: grid;
+
+    
   
   
   grid-template-columns: repeat(2, minmax(25vw, 25vw));
-  justify-content: center;
-  align-items: stretch;
+
   
 }
 
@@ -493,10 +498,14 @@ padding:5.7vh ;
         
   }
        .insta {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; width: 100%;  padding: 0; 
+           
    
         
   }
+    
+       .instagram-media {width: 100vw;}
+
 
 
  #menu {display: none}
@@ -512,7 +521,7 @@ padding:5.7vh ;
 
 @media screen and (max-width: 823px) and (max-height: 414px) and (orientation: landscape)  {
   
-    
+ 
     .uno  {flex-direction: row;}  
     
     
@@ -529,9 +538,10 @@ padding:5.7vh ;
     
    video {height: 80vh;}
     
-   
-    .insta {grid-template-columns: repeat(2, minmax(25vw, 50vw));
+    .insta {grid-template-columns: repeat(2, minmax(25vw, 49vw));padding: 0; width: 100%;
     }
+    
+   
     .paypal {width: 80vh}
     
     .product {grid-template-columns: repeat(2, minmax(25vw, 50vw));
