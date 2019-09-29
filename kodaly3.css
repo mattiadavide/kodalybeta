@@ -492,6 +492,11 @@ padding:5.7vh ;
    
         
   }
+       .insta {
+    grid-template-columns: 1fr;
+   
+        
+  }
 
 
  #menu {display: none}
@@ -528,7 +533,8 @@ padding:5.7vh ;
     
     .paypal {width: 80vh}
     
-    .product {grid-template-columns: repeat(2, minmax(25vw, 45vw));}
+    .product {grid-template-columns: repeat(2, minmax(25vw, 45vw));
+    }
     
 }
 
