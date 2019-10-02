@@ -20,6 +20,7 @@ p {
     text-align: justify;
     line-height: 200%;
     padding: 2.6vw;
+    z-index: 99;
    
 }
 
