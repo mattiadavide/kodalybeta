@@ -167,24 +167,24 @@
         
          <iframe  src="https://www.youtube.com/embed/-ZhXDGkJcBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
     
-        <img src="img/instagram/1.jpg">
-        <img src="img/instagram/2.jpg">
-        <img src="img/instagram/3.jpg">
-        <img src="img/instagram/4.jpg">
-        <img src="img/instagram/5.jpg">
-        <img src="img/instagram/6.jpg">
-        <img src="img/instagram/7.jpg">
-        <img src="img/instagram/8.jpg">
-        <img src="img/instagram/9.jpg">
-        <img src="img/instagram/10.jpg">
-        <img src="img/instagram/11.jpg">
-        <img src="img/instagram/12.jpg">
-        <img src="img/instagram/13.jpg">
-        <img src="img/instagram/14.jpg">
-        <img src="img/instagram/15.jpg">
-        <img src="img/instagram/16.jpg">
-        <img src="img/instagram/17.jpg">
-        <img src="img/instagram/18.jpg">
+        <img data-src="img/instagram/1.jpg">
+        <img data-src="img/instagram/2.jpg">
+        <img data-src="img/instagram/3.jpg">
+        <img data-src="img/instagram/4.jpg">
+        <img data-src="img/instagram/5.jpg">
+        <img data-src="img/instagram/6.jpg">
+        <img data-src="img/instagram/7.jpg">
+        <img data-src="img/instagram/8.jpg">
+        <img data-src="img/instagram/9.jpg">
+        <img data-src="img/instagram/10.jpg">
+        <img data-src="img/instagram/11.jpg">
+        <img data-src="img/instagram/12.jpg">
+        <img data-src="img/instagram/13.jpg">
+        <img data-src="img/instagram/14.jpg">
+        <img data-src="img/instagram/15.jpg">
+        <img data-src="img/instagram/16.jpg">
+        <img data-src="img/instagram/17.jpg">
+        <img data-src="img/instagram/18.jpg">
         <iframe  src="https://www.youtube.com/embed/SNrOuhH3KR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
         
@@ -291,7 +291,7 @@
             <div>
 
                 <img style="margin: 4vh; width: 30px; vertical-align: middle;" src="img/instagram.png">
-                <spam>kodaly.app</spam>
+                <spam><a href="https://www.instagram.com/kodaly.app/">kodaly.app</a></spam>
                 <br>
 
                 <img style="margin: 4vh; width: 30px; vertical-align: middle;" src="img/whatsapp.png">
@@ -330,6 +330,16 @@
                 }, 800);
             }
         });
+        
+        
+        $( document ).ready(function() {
+   [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+         img.setAttribute('src', img.getAttribute('data-src'));
+         img.onload = function() {
+            img.removeAttribute('data-src');
+         };
+   });
+});
     </script>
 
 </body>

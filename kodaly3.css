@@ -20,7 +20,7 @@ p {
     text-align: justify;
     line-height: 200%;
     padding: 2.6vw;
-    z-index: 99;
+   
    
 }
 
@@ -29,6 +29,14 @@ spam {
     
 }
 
+
+img {
+   opacity: 1;
+   transition: opacity 0.3s;
+}
+img[data-src] {
+   opacity: 0;
+}
 
 /* Menu
  * --------------------------------------- */
@@ -248,7 +256,7 @@ spam {
     border-bottom: black 1px solid;
 }
 
-#menu li a {
+ a {
     text-decoration: none;
     color: #000;
 }
@@ -491,7 +499,7 @@ spam {
     .due {
         flex-direction: column;
         width: 100vw;
-        height: 70vh;
+        height: 100vh;
         border: none
     }
     .tre {
