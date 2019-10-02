@@ -16,14 +16,17 @@ video {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 18px;
     text-align: justify;
     line-height: 200%;
     padding: 2.6vw;
    
 }
 
-.bar {width: 100vw; height: 55px; background-color: black}
+spam {
+    font-size: 18px;
+    
+}
 
 
 /* Menu
@@ -475,6 +478,11 @@ p {
         justify-content: center;
         align-items: stretch;
     }
+    
+    
+    
+    
+      
  
 }
 
@@ -508,7 +516,7 @@ p {
     }
     .insta {
         grid-template-columns: 1fr;
-        width: 100%;
+        width: 100vw;
         padding: 0;
     }
     
